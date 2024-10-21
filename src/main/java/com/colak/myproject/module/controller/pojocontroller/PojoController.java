@@ -1,10 +1,8 @@
-package com.colak.myproject.module.services;
+package com.colak.myproject.module.controller.pojocontroller;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
-
-import com.colak.myproject.module.Pojo;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.ws.rs.Consumes;
@@ -21,13 +19,12 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
 @Path("myservice")
-public class MyService {
+public class PojoController {
 
 	@GET
 	@Path("/hello")
 	public Response sayHello(@Context HttpServletRequest request) {
-		Response response = Response.ok("hello!").build();
-		return response;
+        return Response.ok("hello!").build();
 	}
 
 	@GET

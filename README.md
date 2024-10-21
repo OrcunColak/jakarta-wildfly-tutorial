@@ -20,3 +20,8 @@ Type the command below to undeploy the war file
 ```
 mvn wildfly::undeploy
 ```
+
+# Jakarta Data
+
+The original idea is from  
+https://medium.com/oracledevs/straightforward-data-access-with-jakarta-data-and-the-oracle-database-b789b99e4c9b
